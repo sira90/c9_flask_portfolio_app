@@ -15,7 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	new_name = name + 'Like to eat mangos'
+	new_name = (strname) +"Like to eat mangos"
 	return render_templates('index,html', name=new_name)
 
 @app.route('/add_numbers', methods=['GET','POST'])
